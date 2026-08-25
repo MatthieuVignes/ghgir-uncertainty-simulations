@@ -1,0 +1,46 @@
+GHGIR toy demo -- results summary (synthetic data; see README.md)
+
+Monte Carlo (correlation-aware):
+List of 5
+ $ mean   : num 955983
+ $ sd     : num 107283
+ $ cv_pct : num 11.2
+ $ ci95_lo: num 763042
+ $ ci95_hi: num 1182476
+
+Monte Carlo (naive/independent):
+List of 5
+ $ mean   : num 956073
+ $ sd     : num 94424
+ $ cv_pct : num 9.88
+ $ ci95_lo: num 785772
+ $ ci95_hi: num 1155131
+
+Analytical (correlation-aware):
+List of 6
+ $ mean                  : num 956520
+ $ sd                    : num 107120
+ $ cv_pct                : num 11.2
+ $ ci95_lo               : num 763764
+ $ ci95_hi               : num 1183085
+ $ cov_between_categories: num 1.29e+09
+
+Analytical (naive/independent):
+List of 6
+ $ mean                  : num 956520
+ $ sd                    : num 94333
+ $ cv_pct                : num 9.86
+ $ ci95_lo               : num 784962
+ $ ci95_hi               : num 1154345
+ $ cov_between_categories: num 0
+
+Bayesian posterior predictive:
+List of 5
+ $ mean   : num 956261
+ $ sd     : num 65850
+ $ cv_pct : num 6.89
+ $ ci95_lo: num 834379
+ $ ci95_hi: num 1090978
+
+sd understatement if naive: 12.0%
+sd tightening from calibration: 38.6%
